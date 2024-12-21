@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Inköpslista</h1>
+
+    <form id="listForm">
+      <!-- <label for="item">Skriv en uppgift</label> -->
+      <input
+        type="text"
+        id="item"
+        name="item"
+        placeholder="Skriv här..."
+        required
+      />
+      <button type="submit">Lägg till</button>
+    </form>
+
+    <ol id="userList"></ol>
+    <script src="index.js"></script>
+  </body>
+</html>
