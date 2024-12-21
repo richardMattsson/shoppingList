@@ -16,9 +16,12 @@ form.addEventListener("submit", (event) => {
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    const label = document.createElement("label");
+    label.textContent = "Ta bort";
+    label.appendChild(checkbox);
 
     container.appendChild(textSpan);
-    container.appendChild(checkbox);
+    container.appendChild(label);
     li.appendChild(container);
     list.appendChild(li);
     form.reset();
