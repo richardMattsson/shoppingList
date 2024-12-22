@@ -17,8 +17,8 @@ form.addEventListener("submit", (event) => {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     const label = document.createElement("label");
-    label.textContent = "Ta bort";
     label.appendChild(checkbox);
+    label.innerHTML += "Ta bort";
 
     container.appendChild(textSpan);
     container.appendChild(label);
@@ -26,7 +26,7 @@ form.addEventListener("submit", (event) => {
     list.appendChild(li);
     form.reset();
 
-    checkbox.addEventListener("click", (event) => {
+    label.addEventListener("click", () => {
       console.log(li);
       li.remove();
     });
