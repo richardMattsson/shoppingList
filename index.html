@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Inköpslista</h1>
+    <header>
+      <h1>Inköpslista</h1>
+    </header>
+    <main>
+      <form id="listForm">
+        <!-- <label for="item">Skriv en uppgift</label> -->
+        <input
+          type="text"
+          id="item"
+          name="item"
+          placeholder="Skriv här..."
+          required
+        />
+        <button type="submit">Lägg till</button>
+      </form>
 
-    <form id="listForm">
-      <!-- <label for="item">Skriv en uppgift</label> -->
-      <input
-        type="text"
-        id="item"
-        name="item"
-        placeholder="Skriv här..."
-        required
-      />
-      <button type="submit">Lägg till</button>
-    </form>
-
-    <ol id="userList"></ol>
+      <ol id="userList"></ol>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
