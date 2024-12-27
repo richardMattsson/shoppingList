@@ -65,5 +65,14 @@ ol {
   font-family: sans-serif;
 }
 #userList {
-  width: 300px;
+  width: 70vw;
+  margin-left: 15px;
+  list-style-type: disc;
+}
+@media screen and (min-width: 380px) {
+  #userList {
+    width: 300px;
+    margin-left: 15px;
+    list-style-type: disc;
+  }
 }
