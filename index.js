@@ -11,18 +11,19 @@ const list = document.querySelector("#userList");
 
 let storedData = JSON.parse(localStorage.getItem("savedTasks"));
 console.log(storedData);
-
+// can take away arr and only use stored data
 let arr = storedData || [];
 let i;
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const input = document.querySelector("#item").value;
-  console.log(input);
-
+  console.log(input); 
+// push stored data instead 
   arr.push(input);
   localStorage.setItem("savedTasks", JSON.stringify(arr));
-
+// create a function that creates and appends
+// all elements. change send input as an argument
   console.log(arr);
   if (input.trim() !== "") {
     const li = document.createElement("li");
