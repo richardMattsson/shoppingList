@@ -11,12 +11,21 @@ main {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
+}
+article {
+  display: flex;
+}
+.inpuFields {
+  width: 30vw;
+}
+.inputBtn {
 }
 h1 {
   padding-left: 15px;
   font-family: sans-serif;
+  text-align: center;
 }
 form {
   padding-left: 15px;
@@ -43,9 +52,21 @@ label {
   align-items: center;
   font-family: sans-serif;
 }
-ol {
+.listLables {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.checkbox {
+  cursor: pointer;
+}
+ol,
+ul {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ffc;
-  height: 60vh;
+  /* height: 30vh; */
+  min-height: 50px;
   /* width: 800px; */
   padding-left: 25px;
   padding-right: 10px;
@@ -58,19 +79,22 @@ ol {
   align-items: center;
   width: 100%;
   margin-top: 10px;
+  cursor: pointer;
   /* padding: 5px; */
 }
 .list-item-text {
   flex-grow: 1;
   font-family: sans-serif;
 }
-#userList {
+#userList,
+#savedUlList {
   width: 70vw;
   margin-left: 15px;
   list-style-type: disc;
 }
 @media screen and (min-width: 380px) {
-  #userList {
+  #userList,
+  #savedUlList {
     width: 300px;
     margin-left: 15px;
     list-style-type: disc;

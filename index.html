@@ -11,19 +11,40 @@
       <h1>Inköpslista</h1>
     </header>
     <main>
-      <form id="listForm">
-        <!-- <label for="item">Skriv en uppgift</label> -->
-        <input
-          type="text"
-          id="item"
-          name="item"
-          placeholder="Skriv här..."
-          required
-        />
-        <button type="submit">Lägg till</button>
-      </form>
+      <article>
+        <form id="listForm" class="inpuFields">
+          <!-- <label for="item">Skriv en uppgift</label> -->
+          <input
+            type="text"
+            id="item"
+            name="item"
+            placeholder="Skriv här..."
+            required
+          />
+          <button type="submit" class="inputBtn">Lägg till</button>
+        </form>
 
-      <ol id="userList"></ol>
+        <form id="saveListForm" class="inpuFields">
+          <!-- <label for="item">Skriv en uppgift</label> -->
+          <input
+            type="text"
+            id="savedListNameInput"
+            name="item"
+            placeholder="Spara lista som..."
+            required
+          />
+          <input type="submit" value="Spara" class="inputBtn" />
+        </form>
+      </article>
+      <label for="" class="listLables">
+        List
+        <ol id="userList"></ol>
+      </label>
+
+      <label for="" class="listLables">
+        Saved
+        <ul id="savedUlList"></ul>
+      </label>
     </main>
     <script src="index.js"></script>
   </body>
